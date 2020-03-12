@@ -6,14 +6,14 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="https://lh3.googleusercontent.com/proxy/MUsiOduYkkcuITA3MflAFU_N7bj54w6Du-UIaJgnCDlLn8DhUqOzxzN4B8oCZ6M_oDD7MBkFtv9z7x71fOq-fn9AIeqSQaLYp2u7q5hv0jHdJ51tcDJLITVpdYEp1C4" alt="IMG-BENNER">
+						<img src="<?= base_url('assets/template/images/salon.jpg'); ?> "alt="IMG-BENNER"> 
 					</div>
 				</div>
 
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<h2>Salon Zata</h2><br>
+						<h2>Salon Zeeta</h2><br>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -37,24 +37,24 @@
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-02.jpg" alt="IMG-BENNER">
+						<img width="30px" height="100px" src="<?= base_url('assets/template/images/Makarizo.jfif'); ?> "alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Dresses
+								Makarizo
 							</a>
 						</div>
 					</div>
 
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-05.jpg" alt="IMG-BENNER">
+						<img src="<?= base_url('assets/template/images/Creambath.jfif'); ?>"alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Sunglasses
+								Creambath
 							</a>
 						</div>
 					</div>
@@ -63,24 +63,24 @@
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-03.jpg" alt="IMG-BENNER">
+						<img src="<?= base_url('assets/template/images/Olive Hair BIOAQUA.jfif'); ?>" alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Watches
+								Olive Hair BIOAQUA
 							</a>
 						</div>
 					</div>
 
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-07.jpg" alt="IMG-BENNER">
+						<img src="<?= base_url('assets/template/images/Elips Hair Mask.jfif'); ?>" alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Footerwear
+								Elips Hair Mask
 							</a>
 						</div>
 					</div>
@@ -89,22 +89,30 @@
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="images/banner-04.jpg" alt="IMG-BENNER">
+						<img src="<?= base_url('assets/template/images/Loreal Hair Mask.jfif'); ?>"  alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Bags
+								Loreal Hair Mask
 							</a>
 						</div>
 					</div>
+				
+					<!-- block1 -->
+					<div class="block1 wrap-pic-w pos-relative m-b-30">
+						<img src="<?= base_url('assets/template/images/Vanestrix Hair Mask.jfif'); ?>" alt="IMG">
 
-					<!-- block2 -->
-					<div class="block2 wrap-pic-w pos-relative m-b-30">
-						<img src="images/icons/bg-01.jpg" alt="IMG">
-
-						
+							<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Vanestrix Hair Mask
+							</a>
+						</div>
 					</div>
+				</div>
+			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+
 				</div>
 			</div>
 		</div>

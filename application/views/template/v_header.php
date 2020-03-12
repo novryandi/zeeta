@@ -45,7 +45,7 @@
 		<div class="container-menu-header">
 			
 
-			<div class="wrap_header" style="background-color: grey;">
+			<div class="wrap_header" style="background-color: black;">
 				<!-- Logo -->
 				<a href="<?= base_url('homepage');?>" class="logo">
 					<img width="100" height="100" src="<?= base_url('assets/template/images/zeeta.png'); ?>" alt="IMG-LOGO">
@@ -63,11 +63,11 @@
 							</li>
 
 							<li>
-								<a href="<?= base_url('homepage/katalog');?>">Produk Kami</a>
+								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk Kami</a>
 							</li>
 
 							<li class="sale-noti">
-								<a href="<?= base_url('homepage/reservasi');?>">Reservasi</a>
+								<a href="<?= base_url('homepage/reservasi');?>" style="color: gold;">Reservasi</a>
 							</li>
 						</ul>
 					</nav>
