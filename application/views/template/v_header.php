@@ -63,7 +63,7 @@
 							</li>
 
 							<li>
-								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk Kami</a>
+								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk </a>
 							</li>
 
 							<li class="sale-noti">
@@ -75,8 +75,9 @@
 
 				<!-- Header Icon -->
 				<div class="header-icons">
-					<a href="#" class="header-wrapicon1 dis-block">
-						<img src="<?= base_url();?>assets/template/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+					<a href="<?= base_url('login'); ?>" class="header-wrapicon1 dis-block">
+						<img width="30px" height="100px"src="<?= base_url('assets/template/images/mahkota.png'); ?>" class="header-icon1" alt="ICON">
+				
 					</a>
 
 				</div>

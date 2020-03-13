@@ -36,22 +36,23 @@
 			<div class="row">
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img width="30px" height="100px" src="<?= base_url('assets/template/images/Makarizo.jfif'); ?> "alt="IMG-BENNER">
-
-						<div class="block1-wrapbtn w-size2">
+					<a href="#">
+					<div class="pos-relative">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Makarizo.jfif'); ?>" alt="IMG-BENNER">
+						
+						<div>
 							<!-- Button -->
-							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+							<button class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Makarizo
+							</button>
 							</a>
 						</div>
 					</div>
-
 					<!-- block1 -->
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/Creambath.jfif'); ?>"alt="IMG-BENNER">
+					<div class="block1 pos-relative m-b-30">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Creambath.jfif'); ?>"alt="IMG-BENNER">
 
-						<div class="block1-wrapbtn w-size2">
+						<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Creambath
@@ -62,10 +63,10 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/Olive Hair BIOAQUA.jfif'); ?>" alt="IMG-BENNER">
+					<div class="block1 pos-relative m-b-30">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Olive Hair BIOAQUA.jfif'); ?>" alt="IMG-BENNER">
 
-						<div class="block1-wrapbtn w-size2">
+						<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Olive Hair BIOAQUA
@@ -74,10 +75,10 @@
 					</div>
 
 					<!-- block1 -->
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/Elips Hair Mask.jfif'); ?>" alt="IMG-BENNER">
+					<div class="block1 pos-relative m-b-30">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Elips Hair Mask.jfif'); ?>" alt="IMG-BENNER">
 
-						<div class="block1-wrapbtn w-size2">
+						<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Elips Hair Mask
@@ -88,10 +89,10 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/Loreal Hair Mask.jfif'); ?>"  alt="IMG-BENNER">
+					<div class="block1 pos-relative m-b-30">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Loreal Hair Mask.jfif'); ?>"  alt="IMG-BENNER">
 
-						<div class="block1-wrapbtn w-size2">
+						<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
 								Loreal Hair Mask
@@ -101,18 +102,16 @@
 				
 					<!-- block1 -->
 					<div class="block1 wrap-pic-w pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/Vanestrix Hair Mask.jfif'); ?>" alt="IMG">
+						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Vanestrix Hair Mask.jfif'); ?>" alt="IMG">
 
-							<div class="block1-wrapbtn w-size2">
+							<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Vanestrix Hair Mask
+								Vanestrix Hair Mask							
 							</a>
 						</div>
 					</div>
 				</div>
-			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-
 				</div>
 			</div>
 		</div>
