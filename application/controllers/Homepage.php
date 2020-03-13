@@ -6,7 +6,7 @@ class Homepage extends CI_Controller {
 	//Halaman Utama Website	- Homepage
 	public function index()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
+		$data =array( 'title'	=>	'Zeeta Salon',
 						'isi'	=>	'home/list');
 
 		$this->load->view('template/v_header');
@@ -16,7 +16,7 @@ class Homepage extends CI_Controller {
 
 	public function katalog()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
+		$data =array( 'title'	=>	'Zeeta Salon',
 						'isi'	=>	'home/list');
 
 		$this->load->view('template/v_header');
@@ -26,7 +26,7 @@ class Homepage extends CI_Controller {
 
 	public function reservasi()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
+		$data =array( 'title'	=>	'Zeeta Salon',
 						'isi'	=>	'home/list');
 
 		$this->load->view('template/v_header');

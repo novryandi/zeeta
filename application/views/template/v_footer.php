@@ -1,6 +1,6 @@
 
 	
-	<!-- Instagram -->
+	<!-- Instagram 
 	<section class="instagram p-t-20">
 		<div class="sec-title p-b-52 p-l-15 p-r-15">
 			<h3 class="m-text5 t-center">
@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="flex-w">
-			<!-- Block4 -->
+			<!-- Block4 
 			<div class="block4 wrap-pic-w">
 				<img src="images/gallery-03.jpg" alt="IMG-INSTAGRAM">
 
@@ -31,7 +31,7 @@
 				</a>
 			</div>
 
-			<!-- Block4 -->
+			<!-- Block4 
 			<div class="block4 wrap-pic-w">
 				<img src="images/gallery-07.jpg" alt="IMG-INSTAGRAM">
 
@@ -53,7 +53,7 @@
 				</a>
 			</div>
 
-			<!-- Block4 -->
+			<!-- Block4
 			<div class="block4 wrap-pic-w">
 				<img src="images/gallery-09.jpg" alt="IMG-INSTAGRAM">
 
@@ -75,7 +75,7 @@
 				</a>
 			</div>
 
-			<!-- Block4 -->
+			<!-- Block4 
 			<div class="block4 wrap-pic-w">
 				<img src="images/gallery-13.jpg" alt="IMG-INSTAGRAM">
 
@@ -97,7 +97,7 @@
 				</a>
 			</div>
 
-			<!-- Block4 -->
+			<!-- Block4 
 			<div class="block4 wrap-pic-w">
 				<img src="images/gallery-15.jpg" alt="IMG-INSTAGRAM">
 
@@ -121,7 +121,7 @@
 		</div>
 	</section>
 
-	<!-- Shipping -->
+	<!-- Shipping 
 	<section class="shipping bgwhite p-t-62 p-b-46">
 		<div class="flex-w p-l-15 p-r-15">
 			<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
@@ -154,7 +154,7 @@
 				</span>
 			</div>
 		</div>
-	</section>
+	</section>-->
 
 
 	<!-- Footer -->
