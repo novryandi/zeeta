@@ -637,9 +637,7 @@ iframe {
   transform: translateY(-50%);
 }
 
-.logo img {
-  max-height: 27px;
-}
+
 
 
 /*[ Menu ]
@@ -660,17 +658,18 @@ iframe {
 .main_menu > li {
   display: block;
   position: relative;
-  padding-top: 20px;  
-  padding-bottom: 20px; 
-  padding-left: 15px;
-  padding-right: 15px;
+ 
 }
 
 .main_menu > li > a {
+  display: block;
   font-family: Montserrat-Regular;
   font-size: 15px;
   color: #333333;
-  padding: 0;
+  padding-top: 20px;  
+  padding-bottom: 20px; 
+  padding-left: 120px;
+  padding-right: 120px;
   border-bottom: 1px solid transparent;
 }
 
