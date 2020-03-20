@@ -173,7 +173,7 @@
 						<a class="s-text7" style="color: gold;">
 							Address :
 
-							JL.Ryacudu blok F4 9-20 Korpri Raya, Sukarame Baandar Lampung </a>
+							JL.Ryacudu blok F4 9-20 Korpri Raya, Sukarame Bandar Lampung </a>
 
 					</li>
 

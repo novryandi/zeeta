@@ -33,4 +33,24 @@ class Homepage extends CI_Controller {
 		$this->load->view('home/reservasi', $data);
 		$this->load->view('template/v_footer');
 	}
+
+	public function jasa()
+	{
+		$data =array( 'title'	=>	'Zeta Salon',
+						'isi'	=>	'home/list');
+
+		$this->load->view('template/v_header');
+		$this->load->view('home/jasa', $data);
+		$this->load->view('template/v_footer');
+	}
+
+	public function produk()
+	{
+		$data =array( 'title'	=>	'Zeta Salon',
+						'isi'	=>	'home/list');
+
+		$this->load->view('template/v_header');
+		$this->load->view('home/produk', $data);
+		$this->load->view('template/v_footer');
+	}
 }
