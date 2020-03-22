@@ -13,7 +13,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<h2>Salon Zeeta</h2><br>
+						<h2>Klinik Kecantikan ZEETA</h2><br>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -39,7 +39,7 @@
 					<a href="#">
 					<div class="pos-relative">
 						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Makarizo.jfif'); ?>" alt="IMG-BENNER">
-						
+
 						<div>
 							<!-- Button -->
 							<button class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
@@ -48,6 +48,7 @@
 							</a>
 						</div>
 					</div>
+
 					<!-- block1 -->
 					<div class="block1 pos-relative m-b-30">
 						<img width="300px" height="300px" src="<?= base_url('assets/template/images/Creambath.jfif'); ?>"alt="IMG-BENNER">
@@ -107,34 +108,33 @@
 							<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-								Vanestrix Hair Mask							
+								Vanestrix Hair Mask
 							</a>
 						</div>
 					</div>
 				</div>
-				</div>
-			</div>
-		</div>
+			<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+
 	</section>
 
-	<!-- New Product -->
-	<section class="newproduct bgwhite p-t-45 p-b-105">
+<!-- New Product -->
+<!--	<section class="newproduct bgwhite p-t-45 p-b-105">
 		<div class="container">
 			<div class="sec-title p-b-60">
 				<h3 class="m-text5 t-center">
 					Featured Products
 				</h3>
 			</div>
-
+-->
 			<!-- Slide2 -->
-			<div class="wrap-slick2">
+<!--			<div class="wrap-slick2">
 				<div class="slick2">
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-02.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -143,8 +143,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -164,10 +164,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-03.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -176,8 +176,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -197,10 +197,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-05.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -209,8 +209,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -230,10 +230,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-07.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -242,8 +242,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -267,10 +267,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-02.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -279,8 +279,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -300,10 +300,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-03.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -312,8 +312,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -333,10 +333,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-05.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -345,8 +345,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -366,10 +366,10 @@
 					</div>
 
 					<div class="item-slick2 p-l-15 p-r-15">
-						<!-- Block2 -->
-						<div class="block2">
+-->						<!-- Block2 -->
+<!--						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+								<img src="<?= base_url(); ?>assets/template/images/item-07.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -378,8 +378,8 @@
 									</a>
 
 									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+-->										<!-- Button -->
+<!--										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
 											Add to Cart
 										</button>
 									</div>
@@ -406,3 +406,5 @@
 
 		</div>
 	</section>
+-->
+
