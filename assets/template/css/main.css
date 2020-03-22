@@ -87,7 +87,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
-  
 }
 
 body, html {
@@ -693,13 +692,12 @@ li.sale-noti > a {
 }
 
 .sub_menu {
-  display: block;
   list-style-type: none;
   position: absolute;
   z-index: 1100;
   top:0;
   left:100%;
-  width: 338.1px;
+  width: 225px;
   background-color: #222222;
   opacity: 0;
   visibility: hidden;
@@ -720,7 +718,6 @@ li.sale-noti > a {
 .sub_menu li:hover > .sub_menu {
   visibility: visible;
   opacity: 1;
-  display: block;
 } 
 
 .sub_menu li { 
@@ -731,19 +728,15 @@ li.sale-noti > a {
 }
 
 .sub_menu li, .sub_menu a {
-  padding: 5px;
-  padding-left: 20px;
+  padding: 10px;
   font-family: Montserrat-Regular;
   font-size: 13px;
   color: white;
-  display: block;
-  width: 100%;
 }
 
 .sub_menu > li:hover > a {
-  border-bottom: 1px solid gold;
-  width: auto;
-  
+  color: #e65540;
+  text-decoration: none;
 }
 
 /* ------------------------------------ */
@@ -770,6 +763,10 @@ li.sale-noti > a {
   position: relative;
 }
 
+.header-wrapicon1 img,
+.header-wrapicon2 img {
+  height: 100%;
+}
 
 .header-icon1:hover,
 .header-icon2:hover {
