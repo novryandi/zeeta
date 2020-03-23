@@ -34,6 +34,8 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/template/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/template/css/main.css">
 <!--===============================================================================================-->
+
+
 </head>
 
 
@@ -47,8 +49,8 @@
 
 			<div class="wrap_header" style="background-color: black;">
 				<!-- Logo -->
-				<a href="<?= base_url('homepage');?>" class="logo">
-					<img width="100" height="100" src="<?= base_url('assets/template/images/zeeta.png'); ?>" alt="IMG-LOGO">
+				<a  class="logo">
+					<img width="130px" height="auto" src="<?= base_url('assets/template/images/zeeta.png'); ?>" alt="IMG-LOGO">
 				</a>
 				<a href="">
 					
@@ -61,9 +63,14 @@
 								<a href="<?= base_url('homepage');?>" style="color: gold;">Home</a>
 								
 							</li>
-
+							
 							<li>
-								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk </a>
+								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk</a>
+								<ul class="sub_menu">
+									<li><a href="<?= base_url('homepage/produk')?>" style="color: gold;">Produk</a></li>
+									<li><a href="<?= base_url('homepage/jasa')?>" style="color: gold;">Jasa</a></li>
+									
+								</ul>
 							</li>
 
 							<li class="sale-noti">
@@ -75,9 +82,8 @@
 
 				<!-- Header Icon -->
 				<div class="header-icons">
-					<a href="<?= base_url('login'); ?>" class="header-wrapicon1 dis-block">
-						<img width="30px" height="100px"src="<?= base_url('assets/template/images/mahkota.png'); ?>" class="header-icon1" alt="ICON">
-				
+					<a href="<?= base_url('login');?>" class="header-wrapicon1 dis-block">
+						<img width="45px" height="auto"src="<?= base_url();?>assets/template/images/mahkota.png" class="header-icon1" alt="ICON">
 					</a>
 
 				</div>
