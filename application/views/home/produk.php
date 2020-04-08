@@ -14,17 +14,7 @@
 								<img src="<?= base_url(); ?>assets/template/images/serum-purple1.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
-
-									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
-									</div>
+									<!-- Tolong dibuat biar gambarnya bisa di klik -->
 								</div>
 							</div>
 
@@ -34,7 +24,7 @@
 								</a>
 
 								<span class="block2-price m-text6 p-r-5">
-									$75.00
+									Rp 75.000
 								</span>
 							</div>
 						</div>
@@ -46,17 +36,7 @@
 								" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
-									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-									</a>
-
-									<div class="block2-btn-addcart w-size1 trans-0-4">
-										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-											Add to Cart
-										</button>
-									</div>
+									<!-- Tolong dibuat biar gambarnya bisa di klik -->
 								</div>
 							</div>
 

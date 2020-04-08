@@ -6,7 +6,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img src="<?= base_url('assets/template/images/salon.jpg'); ?> "alt="IMG-BENNER"> 
+						<img src="<?= base_url('assets/template/images/zeeta banner.jpg'); ?> "alt="IMG-BENNER"> 
 					</div>
 				</div>
 
