@@ -1,4 +1,8 @@
 ###################
+Sebelum memulai, silahkan cek config.php terlebih dahulu. jika masih localhost:8080/, silahkan ganti menjadi localhost/
+###################
+
+###################
 What is CodeIgniter
 ###################
 
