@@ -60,7 +60,7 @@ class Homepage extends CI_Controller {
 						'isi'	=>	'home/list');
 
 		$this->load->view('template/v_header');
-		$this->load->view('home/produk', $data);
+		$this->load->view('home/login', $data);
 		$this->load->view('template/v_footer');
 	}
 }
