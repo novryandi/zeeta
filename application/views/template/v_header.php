@@ -34,6 +34,8 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/template/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/template/css/main.css">
 <!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
 
 
 </head>
