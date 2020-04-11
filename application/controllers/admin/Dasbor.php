@@ -8,7 +8,7 @@ class Dasbor extends CI_Controller {
 		$data = array( 'title'	=> 'Halaman Administrator',
 					   'isi'	=> 'admin/dasbor/list'
 					);
-		$this->load->view('admin/layout/wrapper', $data, False);
+		$this->load->view('admin/layout/wrapper', $data);
 	}
 
 }
