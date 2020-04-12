@@ -34,14 +34,15 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>Reservasi</h3>
+                        <h3>Disini isi jumlah reservasi yg
+                          <br>sudah selesai dari database</h3>
 
                       <p>Reservasi yang sudah selesai</p>
                       </div>
                       <div class="icon">
                         <i class="ion ion-bag"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      <a href="<?= base_url('Reservasi');?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
 
@@ -49,14 +50,15 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>Reservasi Belum</h3>
+                        <h3>Disini isi jumlah reservasi yg
+                          <br>belum selesai dari database</h3>
 
                       <p>Reservasi yang belum selesai</p>
                       </div>
                       <div class="icon">
                         <i class="ion ion-bag"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      <a href="<?= base_url('Reservasi');?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -86,14 +88,15 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>Stok Barang</h3>
+                        <h3>Disini isi jumlah stok brg
+                          <br>keseluruhan</h3>
 
                       <p>Stok barang keseluruhan</p>
                       </div>
                       <div class="icon">
                         <i class="ion ion-ios-box"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      <a href="<?= base_url('Barang');?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
 
@@ -101,14 +104,15 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>Stok Barang Kosong</h3>
+                        <h3>Disini isi jumlah stok brg
+                          <br>yang kosong</h3>
 
                       <p>Stok barang yang kosong</p>
                       </div>
                       <div class="icon">
                         <i class="ion ion-ios-box"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                      <a href="<?= base_url('Barang');?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                 </div>

@@ -11,4 +11,20 @@ class Barang extends CI_Controller {
 		$this->load->view('admin/footer');
 	}
 
+	public function Tambah()
+	{
+		$isi['title'] = 'Barang | Zeeta';
+		$this->load->view('admin/header', $isi);
+		$this->load->view('admin/tambah_stokbarang');
+		$this->load->view('admin/footer');
+	}
+
+	public function Edit()
+	{
+		$isi['title'] = 'Barang | Zeeta';
+		$this->load->view('admin/header', $isi);
+		$this->load->view('admin/edit_stokbarang');
+		$this->load->view('admin/footer');
+	}
+
 }

@@ -18,10 +18,12 @@
               <!-- USERS LIST -->
               <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
+              <h3 class="box-title">Stok Barang</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+              <div><a href="<?= base_url('Barang/Tambah');?>" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah Barang</a></div>
+              <br>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
@@ -38,9 +40,10 @@
                   <td>IF1109</td>
                   <td>Sesuatu</td>
                   <td>isi berdasarkan database</td>
-                  <td><button type="button" class="btn btn-primary">Edit</button>
-                  	<button type="button" class="btn btn-success">Tambah</button>
-                  	<button type="button" class="btn btn-danger">Hapus</button></td>
+                  <td>
+                    <a href="<?= base_url('Barang/Edit');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                  	<button type="button" class="btn btn-danger">Hapus</button>
+                  </td>
                 </tr>
                 </tbody>
               </table>

@@ -29,9 +29,9 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="<?php echo base_url();?>assets/admin/index2.html" class="logo">
+    <a href="<?= base_url(); ?>Homepage" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
         <img width="auto" height="60px" src="<?= base_url('assets/template/images/zeeta.png'); ?>" alt="IMG-LOGO">
@@ -151,9 +151,15 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
+        <li>
+          <a href="<?= base_url(); ?>Admin">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Homepage</span>
+            <i class="fa fa-table"></i> <span>Homepage</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -178,18 +184,7 @@
             <i class="fa fa-edit"></i> <span>Stok barang</span>
           </a>
         </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Place holder</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
-        </li>
+        
         
       </ul>
     </section>

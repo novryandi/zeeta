@@ -11,17 +11,6 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/content');
 		$this->load->view('admin/footer');
 	}
-
-	public function stokbarang()
-	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
-
-		$this->load->view('admin/header', $data);
-		$this->load->view('admin/stokbarang', $data);
-		$this->load->view('admin/footer', $data);
-	}
-
 	
 
 }
