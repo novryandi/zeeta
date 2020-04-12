@@ -40,10 +40,9 @@
                   <td>-</td>
                   <td>-</td>
                   <td>
-                    <span class="label label-success">Approved</span>
-                    <span class="label label-warning">Pending</span>
-                    <span class="label label-primary">Approved</span>
-                    <span class="label label-danger">Denied</span>
+                    <span class="label label-success">Selesai</span>
+                    <span class="label label-warning">Sudah di Konfirmasi</span>
+                    <span class="label label-primary">Sudah Datang ke Klinik</span>
                   </td>
                   <td>
                     <div class="btn-group">

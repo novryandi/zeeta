@@ -6,71 +6,55 @@ class Homepage extends CI_Controller {
 	//Halaman Utama Website	- Homepage
 	public function index()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
+		$isi['title'] = 'Klinik | Home';
 
-		$this->load->view('template/v_header');
-		$this->load->view('home/home', $data);
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/home');
 		$this->load->view('template/v_footer');
 	}
 
 	public function katalog()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
-
-		$this->load->view('template/v_header');
-		$this->load->view('home/katalog', $data);
+		$isi['title'] = 'Klinik | Katalog';
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/katalog');
 		$this->load->view('template/v_footer');
 	}
 
 	public function reservasi()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
+		$isi['title'] = 'Klinik | Reservasi';
 
-		$this->load->view('template/v_header');
-		$this->load->view('home/reservasi', $data);
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/reservasi');
 		$this->load->view('template/v_footer');
 	}
 
 	public function jasa()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
+		$isi['title'] = 'Klinik | jasa';
 
-		$this->load->view('template/v_header');
-		$this->load->view('home/jasa', $data);
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/jasa');
 		$this->load->view('template/v_footer');
 	}
 
 	public function produk()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
+		$isi['title'] = 'Klinik | Produk';
 
-		$this->load->view('template/v_header');
-		$this->load->view('home/produk', $data);
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/produk');
 		$this->load->view('template/v_footer');
 	}
 
 	public function login()
 	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
+		$isi['title'] = 'Klinik | Login';
 
-		$this->load->view('template/v_header');
-		$this->load->view('home/login', $data);
+		$this->load->view('template/v_header', $isi);
+		$this->load->view('home/login');
 		$this->load->view('template/v_footer');
 	}
 
-	public function admin()
-	{
-		$data =array( 'title'	=>	'Zeta Salon',
-						'isi'	=>	'home/list');
-
-		$this->load->view('template/v_header');
-		$this->load->view('admin/layout/wrapper', $data);
-		$this->load->view('template/v_footer');
-	}
 }
