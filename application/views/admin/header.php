@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/dist/css/skins/_all-skins.min.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/dropify/dist/css/dropify.min.css'?>">
+
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/dropify/dist/css/dropify.css'?>">
+
+ <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -165,10 +173,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?= base_url(); ?>Homepage"><i class="fa fa-circle-o"></i> Home</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i> Promo</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i> Produk</a></li>
-            <li><a href=""><i class="fa fa-circle-o"></i> Jasa</a></li>
+            <li><a href="<?= base_url(); ?>AdminHome"><i class="fa fa-circle-o"></i> Home</a></li>
+            <li><a href="<?= base_url(); ?>AdminHome/home_produk"><i class="fa fa-circle-o"></i> Produk</a></li>
+            <li><a href="<?= base_url(); ?>AdminHome/home_jasa"><i class="fa fa-circle-o"></i> Jasa</a></li>
           </ul>
         </li>
         
