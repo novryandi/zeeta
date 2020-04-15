@@ -1,0 +1,39 @@
+<?php
+
+class Rproduk extends CI_model {
+
+  public function getAllRproduk(){
+    $query = $this->db->get('reservasi_produk');
+    return $query->result_array();
+  }
+
+  public function getRprodukById($id_reservasi){
+    return $this->db->get_where('reservasi_produk',['id_reservasi' => $id_reservasi])->row_array();
+  }
+
+  private function id(){
+    $this->load->helper('date');
+    date_default_timezone_set('Asia/Jakarta');
+    $u = uniqid();
+    return date('dmy').$u;
+  }
+
+  public function tambahDataRproduk(){
+    $id_reservasi = $this->id();
+    $data = array(
+      "id_reservasi" => $id_reservasi,
+      'nama' => $this->input->post('nama',true),
+      'phone' => $this->input->post('phone',true),
+      'email' => $this->input->post('email',true),
+      'waktu_ambil' => $this->input->post('waktu_ambil',true),
+      'jumlah' => $this->input->post('jumlah',true),
+    );
+    $this->db->insert('reservasi_produk',$data);
+  }
+
+  public function hapusDataRproduk($id_reservasi){
+    $this->db->where('id_reservasi',$id_reservasi);
+    $this->db->delete('reservasi_produk');
+  }
+
+}
