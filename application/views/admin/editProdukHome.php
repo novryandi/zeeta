@@ -4,7 +4,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      Tambah Barang
+      Edit Produk
       </h1>
     </section>
     <!-- Main content -->
@@ -19,15 +19,20 @@
             <form role="form" method="post" action="#">
               <div class="box-body">
                 <div class="form-group">
-                  <label>Kode Barang</label>
-                  <input type="text" name="kode" class="form-control" placeholder="Kode Barang" required>
+                  <label>Nama Produk</label>
+                  <input type="text" name="kode" class="form-control" placeholder="nama" required>
                 </div>
-                <div class="form-group">
-                  <label>Nama</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+                
+                <div class="box-body pad">
+                  <form>
+                    <label>Deskripsi</label>
+                    <textarea class="textarea" placeholder="Deskripsi Produk"
+                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </form>
                 </div>
+
                 <div class="form-group">
-                  <label>Jumlah stok</label>
+                  <label>Harga</label>
                   <input type="text" name="jumlah" class="form-control" placeholder="Jumlah Stok" required>
                 </div>
 

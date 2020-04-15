@@ -16,7 +16,7 @@
           <div class="box box-primary">
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="pages/mahasiswa/tambah_mahasiswa_proses.php">
+            <form role="form" method="post" action="#">
               <div class="box-body">
                 <div class="form-group">
                   <label>Kode Barang</label>
@@ -30,6 +30,12 @@
                   <label>Jumlah stok</label>
                   <input type="text" name="jumlah" class="form-control" placeholder="Jumlah Stok" required>
                 </div>
+
+                <div class="form-group">
+                  <label>Foto barang</label>
+                  <input type="file" name="filefoto" class="dropify" data-height="300">
+                </div>
+                
                 
               </div>
               <!-- /.box-body -->

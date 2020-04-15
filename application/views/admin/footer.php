@@ -1,9 +1,9 @@
 <!-- Start footer -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
+      <b>Version</b> 15042020
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright &copy; Kelompok 3 BeautyCode</strong> All rights
     reserved.
   </footer>
   <div class="control-sidebar-bg"></div>
@@ -49,6 +49,18 @@
 <script src="<?= base_url(); ?>assets/admin/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url(); ?>assets/admin/dist/js/demo.js"></script>
+
+<!-- Bootstrap WYSIHTML5 -->
+<script src="<?= base_url(); ?>assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script>
+  $(function () {
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor1')
+    //bootstrap WYSIHTML5 - text editor
+    $('.textarea').wysihtml5()
+  })
+</script>
 
 <script>
   $(function () {
