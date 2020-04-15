@@ -28,7 +28,7 @@ class Login extends CI_Controller {
 		}
 	}
 
-	private function login(){
+	private function auth(){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 
@@ -41,13 +41,13 @@ class Login extends CI_Controller {
 					'username'=> $admin['username']
 				];
 				$this->session->set_userdata($data);
-				redirect('admin');
+				redirect('Admin');
 
 			}else{
 				$this->session->set_flashdata('message','<div class="alert alert-danger" role="alert">
 			Wrong password
 		  	</div>');
-			redirect('auth');
+			redirect('Login');
 			}
 
 		}else{
@@ -55,7 +55,7 @@ class Login extends CI_Controller {
 			$this->session->set_flashdata('message','<div class="alert alert-danger" role="alert">
 			username is not registered
 		  </div>');
-			redirect('auth');
+			redirect('Login');
 		}
 	}
 
