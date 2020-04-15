@@ -13,13 +13,8 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<h2>Klinik Kecantikan ZEETA</h2><br>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h2>Klinik Kecantikan Zeeta</h2><br>
+						<p>Kami membantu Anda mendapatkan tampilan wajah terbaik dengan menggabungkan seni dan ilmu estetika untuk menciptakan kecantikan dan keindahan wajah secara holistik dengan menggunakan metode inovatif dari sudut pandang estetika yang profesional dan ideal. Solusi yang Zeeta tawarkan adalah kombinasi cream program, perawatan medis oleh dokter profesional dan perawatan estetik oleh beauty therapist berpengalaman, didukung dengan cita rasa seni yang tinggi dan teknologi estetika yang canggih. </p>
 
 						<a href="<?= base_url('homepage/reservasi');?>" class="btn bg-black btn-block btn-flat"> Reservasi Sekarang</a>
 
