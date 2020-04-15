@@ -21,6 +21,8 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+						<a href="<?= base_url('homepage/reservasi');?>" class="btn bg-black btn-block btn-flat"> Reservasi Sekarang</a>
+
 						
 					</div>
 
