@@ -63,11 +63,11 @@
                         } -->
                 </select>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="title">Jenis Produknya:</label>
                 <select name="city" class="form-control" style="height: 35px">
                 </select>
-            </div>
+            </div> -->
 <!-- Database juga -->
 <!-- <script>
 $( "select[name='state']" ).change(function () {
@@ -90,14 +90,14 @@ $( "select[name='state']" ).change(function () {
 });
 </script> -->
 
-        <div class="row">
+     <!--    <div class="row">
            <div class="col-md-12">
               <div class="form-group">
                  <label class="control-label">Jumlah</label>
                  <input type="text" class="form-control" name="jumlah" id="jumlah">
               </div>
            </div>
-        </div>
+        </div> -->
 
          <input type="submit" class="btn btn-primary" value="Submit">
       </div>
