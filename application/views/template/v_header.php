@@ -35,10 +35,17 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url(); ?>assets/template/css/main.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
 <!-- ========================button bootstrap================== -->
 <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url(); ?>assets/admin/dist/css/AdminLTE.min.css">
+  <!-- bladbka -->
+  <!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.css">
+<!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+<!-- Bootstrap time Picker -->
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.css">
+
 
 
 </head>

@@ -28,17 +28,19 @@
                   <th>No</th>
                   <th>Nama</th>
                   <th>Nomor WA</th>
-                  <th>Jenis Perawatan</th>
+                  <th>Email</th>
+                  <th>Jenis Reservasi</th>
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Other browsers</td>
-                  <td>All others</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td>1</td>
+                  <td>Abbi</td>
+                  <td>081234567890</td>
+                  <td>abbi.dummy@gmail.com</td>
+                  <td>Barang / Jasa</td>
                   <td>
                     <span class="label label-success">Selesai</span>
                     <span class="label label-warning">Sudah di Konfirmasi</span>

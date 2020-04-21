@@ -4,38 +4,40 @@
 <div class="container">
    <div class="panel panel-primary">
       <div class="panel-body">
+        <!-- Nama -->
          <div class="row">
             <div class="col-md-12">
                <div class="form-group">
                   <label class="control-label">Nama</label>
-                  <input type="text" class="form-control" name="nama" id="nama">
+                  <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan nama anda" required>
                </div>
             </div>
          </div>
+         <!-- HP -->
          <div class="row">
             <div class="col-md-12">
                <div class="form-group">
                   <label class="control-label">Nomor Telp/HP</label>
-                  <input type="text" class="form-control" name="phone" id="phone">
+                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Masukan nomor HP anda" required>
                </div>
             </div>
          </div>
+         <!-- Email -->
          <div class="row">
             <div class="col-md-12">
                <div class="form-group">
                   <label class="control-label">Email</label>
-                  <input type="text" class="form-control" name="email" id="email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Masukan email anda (example@email.com)" required>
                </div>
             </div>
          </div>
+
+         <!-- Tanggal -->
          <div class="row">
             <div class='col-md-12'>
                <div class="form-group">
-
-               	<!-- Date pickernya masih belum berfungsi -->
-
-                  <label class="control-label">Appointment Time</label>
-                  <div class="input-group date" data-provide="datepicker" id="datetimepicker1">
+                  <label class="control-label">Tanggal Reservasi</label>
+                  <div class="input-group date" data-provide="datepicker" id="datetimepicker1" required>
                      <input type='text' class="form-control" />
                      <span class="input-group-addon">
                      <span class="glyphicon glyphicon-calendar"></span>
@@ -44,60 +46,31 @@
                </div>
             </div>
          </div>
-         <!-- ini untuk Jenis produk yg dipilih -->
-         <!-- Tutorial untuk database dll : https://www.itsolutionstuff.com/post/php-how-to-make-dependent-dropdown-list-using-jquery-ajaxexample.html -->
-         <div class="form-group">
-                <label for="title">Jenis Produk yg anda pilih:</label>
+
+        <div class="row">
+          <div class="col-md-12">
+                <div class="form-group">
+                  <label>Waktu Reservasi</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control timepicker" required>
+
+                    <div class="input-group-addon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+         <div class="form-group" required>
+                <label for="title">Jenis Reservasi yg ingin anda lakukan:</label>
                 <select name="jenis" class="form-control" style="height: 35px" >
-                    <option value="">--- Silahkan Pilih ---</option>
+                    <option value=""> </option>
                     <!-- place holder -->
                     <option value="Produk">Produk</option>
                     <option value="Jasa">Jasa</option>
-
-                    <!-- Database -->
-                       <!--  require('db_config.php');
-                        $sql = "SELECT * FROM demo_state";
-                        $result = $mysqli->query($sql);
-                        while($row = $result->fetch_assoc()){
-                            echo "<option value='".$row['id']."'>".$row['name']."</option>";
-                        } -->
                 </select>
             </div>
-            <!-- <div class="form-group">
-                <label for="title">Jenis Produknya:</label>
-                <select name="city" class="form-control" style="height: 35px">
-                </select>
-            </div> -->
-<!-- Database juga -->
-<!-- <script>
-$( "select[name='state']" ).change(function () {
-    var stateID = $(this).val();
-    if(stateID) {
-        $.ajax({
-            url: "ajaxpro.php",
-            dataType: 'Json',
-            data: {'id':stateID},
-            success: function(data) {
-                $('select[name="city"]').empty();
-                $.each(data, function(key, value) {
-                    $('select[name="city"]').append('<option value="'+ key +'">'+ value +'</option>');
-                });
-            }
-        });
-    }else{
-        $('select[name="city"]').empty();
-    }
-});
-</script> -->
-
-     <!--    <div class="row">
-           <div class="col-md-12">
-              <div class="form-group">
-                 <label class="control-label">Jumlah</label>
-                 <input type="text" class="form-control" name="jumlah" id="jumlah">
-              </div>
-           </div>
-        </div> -->
 
          <input type="submit" class="btn btn-primary" value="Submit">
       </div>
@@ -105,18 +78,6 @@ $( "select[name='state']" ).change(function () {
 </div>
 
 </form>
-
-<script type='text/javascript'>
-				$('#datetimepicker1').datetimepicker({
-					format: 'yyyy-mm-dd hh:ii'
-				});
-</script>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
-
 
 
 <!--===================================================================== -->
