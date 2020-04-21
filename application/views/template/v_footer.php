@@ -88,24 +88,7 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/template/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url();?>assets/template/vendor/sweetalert/sweetalert.min.js"></script>
-	<script type="text/javascript">
-		$('.block2-btn-addcart').each(function(){
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to cart !", "success");
-			});
-		});
 
-		$('.block2-btn-addwishlist').each(function(){
-			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-			$(this).on('click', function(){
-				swal(nameProduct, "is added to wishlist !", "success");
-			});
-		});
-	</script>
-
-<!--===============================================================================================-->
 	<script src="<?= base_url();?>assets/template/js/main.js"></script>
 
 	<!-- date time picker -->
@@ -131,25 +114,6 @@ $(function () {
   })
 </script>
 
-<script type="text/javascript">
-$(function() {
-	'use strict';
-	window.addEventListener('load', function() {
-	// Fetch all the forms we want to apply custom Bootstrap validation styles to
-	var forms = document.getElementsByClassName('needs-validation');
-	// Loop over them and prevent submission
-	var validation = Array.prototype.filter.call(forms, function(form) {
-	form.addEventListener('submit', function(event) {
-	if (form.checkValidity() === false) {
-	event.preventDefault();
-	event.stopPropagation();
-	}
-	form.classList.add('was-validated');
-	}, false);
-	});
-	}, false);
-	})
-</script>
 
 </body>
 </html>

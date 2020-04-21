@@ -29,6 +29,8 @@
                   <th>Nama</th>
                   <th>Nomor WA</th>
                   <th>Email</th>
+                  <th>Tanggal</th>
+                  <th>Waktu</th>
                   <th>Jenis Reservasi</th>
                   <th>Status</th>
                   <th>Action</th>
@@ -40,6 +42,8 @@
                   <td>Abbi</td>
                   <td>081234567890</td>
                   <td>abbi.dummy@gmail.com</td>
+                  <td>tangal</td>
+                  <td>jam</td>
                   <td>Barang / Jasa</td>
                   <td>
                     <span class="label label-success">Selesai</span>
