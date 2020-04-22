@@ -66,7 +66,7 @@
          <div class="form-group" required>
                 <label for="title">Jenis Reservasi yg ingin anda lakukan:</label>
                 <select name="jenis" class="form-control" style="height: 35px" >
-                    <option value=""> </option>
+                    <option disabled selected value> </option>
                     <!-- place holder -->
                     <option value="Produk">Produk</option>
                     <option value="Jasa">Jasa</option>

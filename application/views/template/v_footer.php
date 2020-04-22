@@ -99,19 +99,21 @@
 <script src="<?php echo base_url();?>assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap time picker -->
 <script src="<?php echo base_url();?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+
 <!-- web script -->
 <script>
 $(function () {
-    //Date picker
+    // Date picker
     $('#datepicker').datepicker({
       autoclose: true
-    })
+    });
 
     //Timepicker
     $('.timepicker').timepicker({
       showInputs: false
-    })
-  })
+    });
+  });
 </script>
 
 
