@@ -60,6 +60,7 @@
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Sudah di konfirmasi</a></li>
                     <li><a href="#">Sudah datang</a></li>
+                    <li><a href="#">Selesai</a></li>
                     <li><a href="#">Hapus</a></li>
                   </ul>
                 </div></td>
