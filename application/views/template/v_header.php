@@ -46,10 +46,6 @@
 <!-- Bootstrap time Picker -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.css">
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 43a206446d4caa8d6fc63df18d4ae9d0380846c3
 
 
 </head>

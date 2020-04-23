@@ -99,7 +99,6 @@
 <script src="<?php echo base_url();?>assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap time picker -->
 <script src="<?php echo base_url();?>assets/admin/plugins/timepicker/bootstrap-timepicker.min.js"></script>
-<<<<<<< HEAD
 <!-- web script -->
 <script>
 $(function () {
@@ -107,28 +106,12 @@ $(function () {
     $('#datepicker').datepicker({
       autoclose: true
     })
-=======
-
-
-<!-- web script -->
-<script>
-$(function () {
-    // Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
->>>>>>> 43a206446d4caa8d6fc63df18d4ae9d0380846c3
 
     //Timepicker
     $('.timepicker').timepicker({
       showInputs: false
-<<<<<<< HEAD
     })
   })
-=======
-    });
-  });
->>>>>>> 43a206446d4caa8d6fc63df18d4ae9d0380846c3
 </script>
 
 
