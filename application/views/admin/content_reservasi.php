@@ -18,7 +18,7 @@
               <!-- USERS LIST -->
               <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data Table With Full Features</h3>
+              <h3 class="box-title">Resevasi</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -28,17 +28,23 @@
                   <th>No</th>
                   <th>Nama</th>
                   <th>Nomor WA</th>
-                  <th>Jenis Perawatan</th>
+                  <th>Email</th>
+                  <th>Tanggal</th>
+                  <th>Waktu</th>
+                  <th>Jenis Reservasi</th>
                   <th>Status</th>
                   <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Other browsers</td>
-                  <td>All others</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td>1</td>
+                  <td>Abbi</td>
+                  <td>081234567890</td>
+                  <td>abbi.dummy@gmail.com</td>
+                  <td>tangal</td>
+                  <td>jam</td>
+                  <td>Barang / Jasa</td>
                   <td>
                     <span class="label label-success">Selesai</span>
                     <span class="label label-warning">Sudah di Konfirmasi</span>
@@ -54,6 +60,7 @@
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="#">Sudah di konfirmasi</a></li>
                     <li><a href="#">Sudah datang</a></li>
+                    <li><a href="#">Selesai</a></li>
                     <li><a href="#">Hapus</a></li>
                   </ul>
                 </div></td>
