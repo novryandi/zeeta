@@ -22,28 +22,20 @@ class Produk extends CI_model {
     return date('dmy').$u;
   }
 
-  public function tambahDataProduk($data){
-
+  public function tambahDataProduk(){
     $data = array(
-      "id_produk" => $id_produk,
       'nama_produk' => $this->input->post('nama_produk',true),
-      'kategori_produk' => $this->input->post('kategori_produk',true),
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
-      'desc_produk' => $this->input->post('desc_produk',true),
-      'banner_produk' => $this->uploadPoster($id_produk),
     );
-    $this->db->insert('produk',$data1);
+    $this->db->insert('produk',$data);
   }
 
   public function ubahDataProduk($id_produk){
     $data1 = [
       "nama_produk" => $this->input->post('nama_produk',true),
-      'kategori_produk' => $this->input->post('kategori_produk',true),
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
-      "desc_produk" => $this->input->post('desc_produk',true),
-      "banner_produk" => $this->uploadPoster($id_produk),
     ];
     $this->db->where('id_produk',$id_produk);
     $this->db->update('produk',$data1);
@@ -52,7 +44,6 @@ class Produk extends CI_model {
   public function hapusDataProduk($id_produk){
     $this->db->where('id_produk',$id_produk);
     $this->db->delete('produk');
-    $this->deletePoster($id_produk);
   }
 
   private function uploadPoster($id_produk){
