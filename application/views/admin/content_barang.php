@@ -27,24 +27,24 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
-                  <th>Kode barang</th>
                   <th>Nama barang</th>
+                  <th>Harga barang</th>
                   <th>Jumlah Stok</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
+                  <?php foreach ($produk as $prd) : ?>
                 <tr>
-                  <td>1</td>
-                  <td>IF1109</td>
-                  <td>Sesuatu</td>
-                  <td>isi berdasarkan database</td>
+                  <td><?= $prd['nama_produk']?></td>
+                  <td><?= $prd['harga_produk']?></td>
+                  <td><?= $prd['jumlah_produk']?></td>
                   <td>
-                    <a href="<?= base_url('Barang/Edit');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                  	<button type="button" class="btn btn-danger">Hapus</button>
+                    <a href="<?= base_url();?>Barang/Edit/<?= $prd['id_produk'];?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                  	<a href="<?= base_url();?>Barang/Hapus/<?= $prd['id_produk'];?>" role="button" class="btn btn-danger" onclick="return confirm('yakin?');">Hapus</a>
                   </td>
                 </tr>
+              <?php endforeach; ?>
                 </tbody>
               </table>
             </div>
