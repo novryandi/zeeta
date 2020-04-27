@@ -16,26 +16,22 @@
           <div class="box box-primary">
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="#">
+            <form role="form" method="post" action="<?= base_url('Barang/tambah')?>">
               <div class="box-body">
                 <div class="form-group">
-                  <label>Kode Barang</label>
-                  <input type="text" name="kode" class="form-control" placeholder="Kode Barang" required>
+                  <label>Nama</label>
+                  <input type="text" name="nama_produk" class="form-control" placeholder="Nama">
                 </div>
                 <div class="form-group">
-                  <label>Nama</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+                  <label>Harga</label>
+                  <input type="text" name="harga_produk" class="form-control" placeholder="Harga">
                 </div>
                 <div class="form-group">
                   <label>Jumlah stok</label>
-                  <input type="text" name="jumlah" class="form-control" placeholder="Jumlah Stok" required>
+                  <input type="text" name="jumlah_produk" class="form-control" placeholder="Jumlah Stok">
                 </div>
 
-        				<div class="form-group">
-        					<label>Foto barang</label>
-        					<input type="file" name="filefoto" class="dropify" data-height="300">
-        				</div>
-
+              </div>
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary" title="Simpan Data"> <i class="glyphicon glyphicon-floppy-disk"></i> Simpan</button>
