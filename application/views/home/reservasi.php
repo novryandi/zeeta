@@ -10,7 +10,7 @@
                <div class="form-group">
                   <label class="control-label">Nama</label>
                   <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukan nama anda" required
-                  oninvalid="this.setCustomValidity('Tolong masukan nama anda')" oninput="setCustomValidity('')">
+                  oninvalid="this.setCustomValidity('Tolong isi dengan benar')" oninput="setCustomValidity('')">
                </div>
             </div>
          </div>
@@ -19,7 +19,7 @@
             <div class="col-md-12">
                <div class="form-group">
                   <label class="control-label">Nomor Telp/HP</label>
-                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Masukan nomor HP anda" required oninvalid="this.setCustomValidity('Tolong masukan nomor HP anda')" oninput="setCustomValidity('')">
+                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Masukan nomor HP anda" required oninvalid="this.setCustomValidity('Tolong isi dengan benar')" oninput="setCustomValidity('')">
                </div>
             </div>
          </div>
@@ -28,7 +28,7 @@
             <div class="col-md-12">
                <div class="form-group">
                   <label class="control-label">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Masukan email anda (example@email.com)" required oninvalid="this.setCustomValidity('Tolong masukan email anda')" oninput="setCustomValidity('')">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Masukan email anda (example@email.com)" required oninvalid="this.setCustomValidity('Tolong isi dengan benar')" oninput="setCustomValidity('')">
                </div>
             </div>
          </div>

@@ -16,14 +16,16 @@
 
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
+								<label>Username</label>
+								<span class="input-group-text"></span>
 							</div>
 							<input type="text" class="form-control" placeholder="username" name="username" id="username">
 						</div>
 
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
-								<span class="input-group-text"><i class="fas fa-key"></i></span>
+								<label>Password</label>
+								<span class="input-group-text"></span>
 							</div>
 							<input type="password" class="form-control" placeholder="password" name="password" id="password">
 						</div>

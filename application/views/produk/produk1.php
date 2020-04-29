@@ -5,7 +5,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">
-						<img width="auto" height="380px" src="<?= base_url(); ?>assets/template/images/serum-purple1.jpg "alt="IMG-BENNER"> 
+						<img width="auto" height="500px" src="<?= base_url(); ?>assets/template/images/serum-purple1.jpg "alt="IMG-BENNER"> 
 					</div>
 				</div>
 
@@ -17,7 +17,7 @@
 						Berfungsi sebagai Anti Oksidant dam Mencerahkan wajah .</p>
 						</br>
 						<h2 class="harga">Rp.75.000,-</h2>
-					<input type= "button" href="<?= base_url('reservasi');?>" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"  style="color: gold;" value="Tambahkan Ke Reservasi">
+					<input type= "button" href="<?= base_url('reservasi');?>" class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4"  style="color: gold;" value="Reservasi Sekarang">
 					</input>	
 					</div>
 

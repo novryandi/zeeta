@@ -2397,6 +2397,24 @@
 	transform: scale(1.1);
 }
 
+.hov-img-zoom-prm {
+	display: block;
+	overflow: hidden;
+}
+.hov-img-zoom-prm img{
+	width: auto;
+	-webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.hov-img-zoom-prm:hover img {
+	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 
 /*[  ]

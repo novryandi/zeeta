@@ -22,11 +22,11 @@
 
               <h3 class="profile-username text-center">Nama</h3>
 
-              <p class="text-muted text-center">Jabatan</p>
+              <p class="text-muted text-center">Admin</p>
 
               <a href="<?= base_url('Profil/edit');?>" class="btn btn-primary btn-block"><b>Edit Profil</b></a>
               <br>
-               <a href="<?= base_url('Profil');?>" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah Pengguna</a>
+               <a href="<?= base_url('Profil');?>" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah Admin</a>
               <a href="#" class="btn btn-danger pull-right"><b>Log out</b></a>
 
             </div>

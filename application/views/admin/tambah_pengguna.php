@@ -29,11 +29,6 @@
                 </div>
 
                 <div class="form-group">
-                  <label>Jabatan</label>
-                  <input type="text" name="jabatan" class="form-control" placeholder="Jabatan" required>
-                </div>
-
-                <div class="form-group">
                   <label>Username</label>
                   <input type="text" name="username" class="form-control" placeholder="username" required>
                 </div>
