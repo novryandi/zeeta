@@ -2,6 +2,11 @@
 
 class Produk extends CI_model {
 
+  function __construct(){
+	   parent::__construct();
+	    $this->load->helper(array('form', 'url'));
+    }
+
   public function getAllProduk(){
     $query = $this->db->get('produk');
     return $query->result_array();
@@ -25,11 +30,12 @@ class Produk extends CI_model {
   public function tambahDataProduk(){
     $id_produk = $this->id();
     $data = array(
+      'id_produk' => $id_produk,
       'nama_produk' => $this->input->post('nama_produk',true),
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
       'deskripsi' => $this->input->post('deskripsi',true),
-      'banner_jasa' => $this->uploadPoster($id_produk),
+      'foto' => $this->uploadPoster($id_produk),
     );
     $this->db->insert('produk',$data);
   }
@@ -40,7 +46,7 @@ class Produk extends CI_model {
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
       'deskripsi' => $this->input->post('deskripsi',true),
-      'banner_jasa' => $this->uploadPoster($id_produk),
+      'foto' => $this->uploadPoster($id_produk),
     ];
     $this->db->where('id_produk',$id_produk);
     $this->db->update('produk',$data1);
@@ -63,17 +69,17 @@ class Produk extends CI_model {
 
     $this->load->library('upload' , $config);
 
-    if ($this->upload->do_upload('poster')) {
+    if ($this->upload->do_upload('foto')) {
       return $this->upload->data("file_name");
     } else {
-    //print_r($this->upload->display_errors());
-    return "default.jpg";
+    print_r($this->upload->display_errors());
+    //return "default.jpg";
     }
   }
 
   private function deletePoster($id_produk){
     $produk = $this->getProdukById($id_produk);
-    if ($produk['banner_produk'] != "default.jpg"){
+    if ($produk['foto'] != "default.jpg"){
       $filename = explode(".", $produk->poster)[0];
       return array_map('unlink', glob(FCPATH."upload/produk/$id_produk.*"));
     }
