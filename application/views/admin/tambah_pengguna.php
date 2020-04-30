@@ -16,30 +16,39 @@
           <div class="box box-primary">
             <!-- /.box-header -->
             <!-- form start -->
-            <form autocomplete="off" role="form" method="post" action="#">
+            <form method="post" enctype="multipart/form-data" action="<?= base_url('Profil'); ?>">
               <div class="box-body">
-                <div class="form-group">
-                  <label>Foto Profil</label>
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
-            
+                
+                <?php if(validation_errors()) :?>
+                  <div class="alert alert-danger">
+                    <?= validation_errors()?>
+                  </div>
+                <?php endif;?>
+
                 <div class="form-group">
                   <label>Nama</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Nama" required>
+                  <input type="text" name="nama_admin" id="nama_admin" class="form-control" placeholder="Nama" required>
                 </div>
 
                 <div class="form-group">
                   <label>Username</label>
-                  <input type="text" name="username" class="form-control" placeholder="username" required>
+                  <input type="text" name="username" id="username" class="form-control" placeholder="username" required>
                 </div>
 
                 <div class="form-group">
                   <label>Password</label>
-                  <input type="password" name="password" class="form-control" placeholder="password" required>
-                  <input type="checkbox" onclick="">Show Password 
+                  <input type="password" name="password" id="password" class="form-control" placeholder="password" required>
                 </div>
 
-        				
+                <div class="form-group">
+                  <label>Re-type Password</label>
+                  <input type="password" name="password1" id="password1" class="form-control" placeholder="password" required>
+                </div>
+
+                <div class="form-group">
+                  <label>Foto Profil</label>
+                  <input type="file" name="foto_admin" id="foto_admin" class="dropify" data-height="300">
+                </div>
 
               <!-- /.box-body -->
               <div class="box-footer">
