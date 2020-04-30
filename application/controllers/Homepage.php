@@ -35,7 +35,9 @@ class Homepage extends CI_Controller {
 		$this->form_validation->set_rules('nama','Nama','required');
 		$this->form_validation->set_rules('phone','No Telpon','required|numeric');
 		$this->form_validation->set_rules('email','Email','required|valid_email');
-		$this->form_validation->set_rules('jumlah','Jumlah','required|numeric');
+		$this->form_validation->set_rules('tanggal','Tanggal Reservasi','required');
+		$this->form_validation->set_rules('jam','Jam Reservasi','required');
+		$this->form_validation->set_rules('jenis','Jenis Reservasi','required');
 
 		if($this->form_validation->run() == FALSE){
 			$isi['title'] = 'Klinik | Reservasi';
