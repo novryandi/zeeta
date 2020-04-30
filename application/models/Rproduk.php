@@ -25,8 +25,9 @@ class Rproduk extends CI_model {
       'nama' => $this->input->post('nama',true),
       'phone' => $this->input->post('phone',true),
       'email' => $this->input->post('email',true),
-      'waktu_ambil' => $this->input->post('waktu_ambil',true),
-      'jumlah' => $this->input->post('jumlah',true),
+      'tanggal' => $this->input->post('tanggal',true),
+      'jam' => $this->input->post('jam',true),
+      'jenis' => $this->input->post('jenis',true),
     );
     $this->db->insert('reservasi_produk',$data);
   }
