@@ -18,16 +18,16 @@
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="" alt="User profile picture">
+              <img class="profile-user-img img-responsive img-circle" src="<?= base_url();?>upload/admin/<?= $admin['foto_admin'];?>" alt="User profile picture">
 
-              <h3 class="profile-username text-center">Nama</h3>
+              <h3 class="profile-username text-center"><?= $admin['nama_admin']; ?></h3>
 
-              <p class="text-muted text-center">Admin</p>
+              <p class="text-muted text-center"><?= $admin['username']; ?></p>
 
-              <a href="<?= base_url('Profil/edit');?>" class="btn btn-primary btn-block"><b>Edit Profil</b></a>
+              <a href="<?= base_url();?>Profil/edit/<?= $admin['id_admin']; ?>" class="btn btn-primary btn-block"><b>Edit Profil</b></a>
               <br>
                <a href="<?= base_url('Profil');?>" class="btn btn-primary" role="button" title="Tambah Data"><i class="glyphicon glyphicon-plus"></i> Tambah Admin</a>
-              <a href="#" class="btn btn-danger pull-right"><b>Log out</b></a>
+              <a href="<?= base_url('Admin/logout');?>" class="btn btn-danger pull-right"><b>Log out</b></a>
 
             </div>
             <!-- /.box-body -->
