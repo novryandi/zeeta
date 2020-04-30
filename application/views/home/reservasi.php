@@ -39,7 +39,7 @@
                <div class="form-group">
                   <label class="control-label">Tanggal Reservasi</label>
                   <div class="input-group date" data-provide="datepicker" id="datetimepicker1" required>
-                     <input type='text' class="form-control" >
+                     <input name="tanggal" type='text' class="form-control" >
                      <span class="input-group-addon">
                      <span class="glyphicon glyphicon-calendar"></span>
                      </span>
@@ -53,7 +53,7 @@
                 <div class="form-group">
                   <label>Waktu Reservasi</label>
                   <div class="input-group">
-                    <input type="text" class="form-control timepicker" required>
+                    <input name="jam" id="jam" type="text" class="form-control timepicker" required>
 
                     <div class="input-group-addon">
                       <i class="fa fa-clock-o"></i>
