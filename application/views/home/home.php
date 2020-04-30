@@ -62,7 +62,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
-						<img width="auto" height="300px" src="<?= base_url('assets/template/images/658305.jpg'); ?>" alt="IMG-BENNER">
+						<img width="auto" height="300px" src="<?= base_url('assets/template/images/IMG-20200419-WA0010.jpg'); ?>" alt="IMG-BENNER">
 
 						<div>
 							<!-- Button -->
@@ -74,7 +74,7 @@
 
 					<!-- block1 -->
 					<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
-						<img width="auto" height="300px" src="<?= base_url('assets/template/images/658310.jpg'); ?>" alt="IMG-BENNER">
+						<img width="auto" height="300px" src="<?= base_url('assets/template/images/IMG-20200419-WA0012.jpg'); ?>" alt="IMG-BENNER">
 
 						<div>
 							<!-- Button -->
@@ -88,7 +88,7 @@
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 					<!-- block1 -->
 					<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
-						<img width="auto" height="300px" src="<?= base_url('assets/template/images/658307.jpg'); ?>"  alt="IMG-BENNER">
+						<img width="auto" height="300px" src="<?= base_url('assets/template/images/IMG-20200419-WA0009.jpg'); ?>"  alt="IMG-BENNER">
 						<div>
 							<!-- Button -->
 							<a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4" width="auto">
@@ -99,7 +99,7 @@
 				
 					<!-- block1 -->
 					<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
-						<img width="auto" height="300px" src="<?= base_url('assets/template/images/658306.jpg'); ?>" alt="IMG">
+						<img width="auto" height="300px" src="<?= base_url('assets/template/images/IMG-20200419-WA0011.jpg'); ?>" alt="IMG">
 
 							<div>
 							<!-- Button -->

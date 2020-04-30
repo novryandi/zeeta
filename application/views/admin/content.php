@@ -34,8 +34,7 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>Disini isi jumlah reservasi yg
-                          <br>sudah selesai dari database</h3>
+                        <h3>0</h3>
 
                       <p>Reservasi yang sudah selesai</p>
                       </div>
@@ -50,8 +49,7 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>Disini isi jumlah reservasi yg
-                          <br>belum selesai dari database</h3>
+                        <h3>0</h3>
 
                       <p>Reservasi yang belum selesai</p>
                       </div>
@@ -88,8 +86,7 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>Disini isi jumlah stok brg
-                          <br>keseluruhan</h3>
+                        <h3>0</h3>
 
                       <p>Stok barang keseluruhan</p>
                       </div>
@@ -104,8 +101,7 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>Disini isi jumlah stok brg
-                          <br>yang kosong</h3>
+                        <h3>0</h3>
 
                       <p>Stok barang yang kosong</p>
                       </div>
