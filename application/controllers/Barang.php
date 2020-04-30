@@ -25,6 +25,7 @@ class Barang extends CI_Controller {
 		$this->form_validation->set_rules('nama_produk','Nama','required');
 		$this->form_validation->set_rules('harga_produk','Harga','required|numeric');
 		$this->form_validation->set_rules('jumlah_produk','Jumlah','required|numeric');
+		$this->form_validation->set_rules('deskripsi','Deskripsi','required');
 		if($this->form_validation->run() == FALSE ){
 		$isi['title'] = 'Barang | Zeeta';
 		$this->load->view('admin/header', $isi);
@@ -43,6 +44,7 @@ class Barang extends CI_Controller {
 		$this->form_validation->set_rules('nama_produk','Nama','required');
 		$this->form_validation->set_rules('harga_produk','Harga','required|numeric');
 		$this->form_validation->set_rules('jumlah_produk','Jumlah','required|numeric');
+		$this->form_validation->set_rules('deskripsi','Deskripsi','required');
 		$data['produk'] = $this->Produk->getProdukById($id_produk);
 		if($this->form_validation->run() ==  FALSE){
 		$isi['title'] = 'Barang | Zeeta';
