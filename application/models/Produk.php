@@ -72,8 +72,8 @@ class Produk extends CI_model {
     if ($this->upload->do_upload('foto')) {
       return $this->upload->data("file_name");
     } else {
-    print_r($this->upload->display_errors());
-    //return "default.jpg";
+    //print_r($this->upload->display_errors());
+    return "default.jpg";
     }
   }
 
