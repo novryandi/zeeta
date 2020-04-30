@@ -16,7 +16,7 @@
           <div class="box box-primary">
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="<?= base_url()?>Barang/Edit/<?= $produk['id_produk'];?>">
+            <form role="form" method="post" enctype="multipart/form-data" action="<?= base_url()?>Barang/Edit/<?= $produk['id_produk'];?>">
               <div class="box-body">
                 <div class="form-group">
                   <label>Nama</label>
@@ -29,6 +29,20 @@
                 <div class="form-group">
                   <label>Jumlah stok</label>
                   <input type="text" name="jumlah_produk" id="jumlah_produk" class="form-control" value="<?= $produk['jumlah_produk'];?>">
+                </div>
+
+                <div class="form-group">
+                  <label>Deskripsi</label>
+                  <input type="text" name="deskripsi" id="deskripsi" class="form-control" value="<?= $produk['deskripsi'];?>">
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Foto Barang</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="file" class="form-control form-control-user" id="foto" placeholder="Foto Barang" name="foto">
+                  </div>
                 </div>
 
               </div>
