@@ -23,10 +23,13 @@ class Produk extends CI_model {
   }
 
   public function tambahDataProduk(){
+    $id_produk = $this->id();
     $data = array(
       'nama_produk' => $this->input->post('nama_produk',true),
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
+      'deskripsi' => $this->input->post('deskripsi',true),
+      'banner_jasa' => $this->uploadPoster($id_produk),
     );
     $this->db->insert('produk',$data);
   }
@@ -36,6 +39,8 @@ class Produk extends CI_model {
       "nama_produk" => $this->input->post('nama_produk',true),
       'harga_produk' => $this->input->post('harga_produk',true),
       'jumlah_produk' => $this->input->post('jumlah_produk',true),
+      'deskripsi' => $this->input->post('deskripsi',true),
+      'banner_jasa' => $this->uploadPoster($id_produk),
     ];
     $this->db->where('id_produk',$id_produk);
     $this->db->update('produk',$data1);
@@ -44,6 +49,7 @@ class Produk extends CI_model {
   public function hapusDataProduk($id_produk){
     $this->db->where('id_produk',$id_produk);
     $this->db->delete('produk');
+    $this->deletePoster($id_produk);
   }
 
   private function uploadPoster($id_produk){
