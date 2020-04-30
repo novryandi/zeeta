@@ -25,7 +25,6 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
                   <th>Nama</th>
                   <th>Nomor WA</th>
                   <th>Email</th>
@@ -38,13 +37,13 @@
                 </thead>
                 <tbody>
                 <tr>
-                  <td>1</td>
-                  <td>Abbi</td>
-                  <td>081234567890</td>
-                  <td>abbi.dummy@gmail.com</td>
-                  <td>tangal</td>
-                  <td>jam</td>
-                  <td>Barang / Jasa</td>
+                  <?php foreach ($produk as $prd) : ?>
+                  <td><?= $prd['nama']?></td>
+                  <td><?= $prd['phone']?></td>
+                  <td><?= $prd['email']?></td>
+                  <td><?= $prd['tanggal']?></td>
+                  <td><?= $prd['jam']?></td>
+                  <td><?= $prd['jenis']?></td>
                   <td>
                     <span class="label label-success">Selesai</span>
                     <span class="label label-warning">Sudah di Konfirmasi</span>
@@ -65,6 +64,7 @@
                   </ul>
                 </div></td>
                 </tr>
+                <?php endforeach; ?>
                 </tbody>
                 <tfoot>
                 </tfoot>
