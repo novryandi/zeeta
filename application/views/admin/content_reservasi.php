@@ -45,9 +45,10 @@
                   <td><?= $prd['jam']?></td>
                   <td><?= $prd['jenis']?></td>
                   <td>
-                    <span class="label label-success">Selesai</span>
-                    <span class="label label-warning">Sudah di Konfirmasi</span>
-                    <span class="label label-primary">Sudah Datang ke Klinik</span>
+                    <?php if($prd['status'] == 1) : ?> <span class="label label-danger">Belum di konfirmasi</span> <?php endif; ?>
+                    <?php if($prd['status'] == 4) : ?> <span class="label label-success">Selesai</span> <?php endif; ?>
+                    <?php if($prd['status'] == 2) : ?> <span class="label label-warning">Sudah di Konfirmasi</span> <?php endif; ?>
+                    <?php if($prd['status'] == 3) : ?> <span class="label label-primary">Sudah Datang ke Klinik</span> <?php endif; ?>
                   </td>
                   <td>
                     <div class="btn-group">
@@ -57,10 +58,10 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Sudah di konfirmasi</a></li>
-                    <li><a href="#">Sudah datang</a></li>
-                    <li><a href="#">Selesai</a></li>
-                    <li><a href="#">Hapus</a></li>
+                    <li><a href="<?= base_url();?>Reservasi/sudahKonfirmasi/<?= $prd['id_reservasi']; ?>">Sudah di konfirmasi</a></li>
+                    <li><a href="<?= base_url();?>Reservasi/sudahDatang/<?= $prd['id_reservasi']; ?>">Sudah datang</a></li>
+                    <li><a href="<?= base_url();?>Reservasi/sudahSelesai/<?= $prd['id_reservasi']; ?>">Selesai</a></li>
+                    <li><a href="<?= base_url();?>Reservasi/hapus/<?= $prd['id_reservasi']; ?>">Hapus</a></li>
                   </ul>
                 </div></td>
                 </tr>
