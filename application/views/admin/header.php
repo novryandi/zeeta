@@ -80,7 +80,7 @@
                   <a href="<?= base_url(); ?>Admin/profil" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Logout</a>
+                  <a href="<?= base_url('Admin/logout');?>" class="btn btn-default btn-flat">Logout</a>
                 </div>
               </li>
             </ul>
