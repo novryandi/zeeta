@@ -37,4 +37,30 @@ class Rproduk extends CI_model {
     $this->db->delete('reservasi_produk');
   }
 
+  public function sudahDatangRproduk($id_reservasi){
+    $status = 3;
+    $data = [
+      'status' => $status
+    ];
+    $this->db->where('id_reservasi',$id_reservasi);
+    $this->db->update('reservasi_produk',$data);
+  }
+
+  public function sudahKonfirmasiRproduk($id_reservasi){
+    $status = 2;
+    $data = [
+      'status' => $status
+    ];
+    $this->db->where('id_reservasi',$id_reservasi);
+    $this->db->update('reservasi_produk',$data);
+  }
+
+  public function sudahSelesaiRproduk($id_reservasi){
+    $status = 4;
+    $data = [
+      'status' => $status
+    ];
+    $this->db->where('id_reservasi',$id_reservasi);
+    $this->db->update('reservasi_produk',$data);
+  }
 }
