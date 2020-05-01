@@ -21,7 +21,25 @@ class Reservasi extends CI_Controller {
 
 	public function hapus($id_reservasi){
 		$this->Keamanan->getKeamananAdm();
-		$this->Produk->hapusDataRproduk($id_reservasi);
+		$this->Rproduk->hapusDataRproduk($id_reservasi);
+		redirect('Reservasi');
+	}
+
+	public function sudahDatang($id_reservasi){
+		$this->Keamanan->getKeamananAdm();
+		$this->Rproduk->sudahDatangRproduk($id_reservasi);
+		redirect('Reservasi');
+	}
+
+	public function sudahKonfirmasi($id_reservasi){
+		$this->Keamanan->getKeamananAdm();
+		$this->Rproduk->sudahKonfirmasiRproduk($id_reservasi);
+		redirect('Reservasi');
+	}
+
+	public function sudahSelesai($id_reservasi){
+		$this->Keamanan->getKeamananAdm();
+		$this->Rproduk->sudahSelesaiRproduk($id_reservasi);
 		redirect('Reservasi');
 	}
 
