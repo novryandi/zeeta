@@ -22,26 +22,24 @@ class Jasa extends CI_model {
     return date('dmy').$u;
   }
 
-  public function tambahDataJasa($data){
-
+  public function tambahDataJasa(){
+    $id_jasa = $this->id();
     $data = array(
       "id_jasa" => $id_jasa,
       'nama_jasa' => $this->input->post('nama_jasa',true),
-      'jenis_jasa' => $this->input->post('jenis_jasa',true),
+      'deskripsi_jasa' => $this->input->post('deskripsi_jasa',true),
       'harga_jasa' => $this->input->post('harga_jasa',true),
-      'desc_jasa' => $this->input->post('desc_jasa',true),
-      'banner_jasa' => $this->uploadPoster($id_jasa),
+      'foto_jasa' => $this->uploadPoster($id_jasa),
     );
-    $this->db->insert('jasa',$data1);
+    $this->db->insert('jasa',$data);
   }
 
   public function ubahDataJasa($id_jasa){
     $data1 = [
       "nama_jasa" => $this->input->post('nama_jasa',true),
-      'jenis_jasa' => $this->input->post('jenis_jasa',true),
+      'deskripsi_jasa' => $this->input->post('deskripsi_jasa',true),
       'harga_jasa' => $this->input->post('harga_jasa',true),
-      "desc_jasa" => $this->input->post('desc_jasa',true),
-      "banner_jasa" => $this->uploadPoster($id_jasa),
+      "foto_jasa" => $this->uploadPoster($id_jasa),
     ];
     $this->db->where('id_jasa',$id_jasa);
     $this->db->update('jasa',$data1);
@@ -64,11 +62,11 @@ class Jasa extends CI_model {
 
     $this->load->library('upload' , $config);
 
-    if ($this->upload->do_upload('poster')) {
+    if ($this->upload->do_upload('foto_jasa')) {
       return $this->upload->data("file_name");
     } else {
-    //print_r($this->upload->display_errors());
-    return "default.jpg";
+    print_r($this->upload->display_errors());
+    //return "default.jpg";
     }
   }
 
