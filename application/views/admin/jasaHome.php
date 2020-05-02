@@ -26,7 +26,6 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
                   <th>Nama Jasa</th>
                   <th>Deskripsi</th>
                   <th>Harga</th>
@@ -35,17 +34,18 @@
                 </tr>
                 </thead>
                 <tbody>
+                  <?php foreach($jasa as $js) : ?>
                 <tr>
-                  <td>1</td>
-                  <td>nama</td>
-                  <td>Sesuatu</td>
-                  <td>70005</td>
-                  <td>blabla.jpg</td>
+                  <td><?= $js['nama_jasa'];?></td>
+                  <td><?= $js['deskripsi_jasa'];?></td>
+                  <td><?= $js['harga_jasa'];?></td>
+                  <td><?= $js['foto_jasa'];?></td>
                   <td>
-                    <a href="<?= base_url('JasaHome/edit_jasa');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                  	<button type="button" class="btn btn-danger">Hapus</button>
+                    <a href="<?= base_url();?>JasaHome/edit_jasa/<?= $js['id_jasa'];?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                  	<a href="<?= base_url();?>JasaHome/hapus/<?= $js['id_jasa'];?>" class="btn btn-danger" onclick="return confirm('yakin?');">Hapus</a>
                   </td>
                 </tr>
+              <?php endforeach; ?>
                 </tbody>
               </table>
             </div>
