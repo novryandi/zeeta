@@ -17,11 +17,11 @@ class AdminHome extends CI_Controller {
 		$this->load->view('admin/footer');
 	}
 
-	public function home_produk()
+	public function home_promo()
 	{
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
-		$this->load->view('admin/produkHome');
+		$this->load->view('admin/promoHome');
 		$this->load->view('admin/footer');
 	}
 

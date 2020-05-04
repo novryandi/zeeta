@@ -39,7 +39,7 @@
                   <td><?= $js['nama_jasa'];?></td>
                   <td><?= $js['deskripsi_jasa'];?></td>
                   <td><?= $js['harga_jasa'];?></td>
-                  <td><?= $js['foto_jasa'];?></td>
+                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"><?= $js['foto_jasa'];?></td>
                   <td>
                     <a href="<?= base_url();?>JasaHome/edit_jasa/<?= $js['id_jasa'];?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                   	<a href="<?= base_url();?>JasaHome/hapus/<?= $js['id_jasa'];?>" class="btn btn-danger" onclick="return confirm('yakin?');">Hapus</a>

@@ -118,7 +118,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="<?= base_url(); ?>AdminHome"><i class="fa fa-circle-o"></i> Home</a></li>
-            <li><a href="<?= base_url(); ?>AdminHome/home_produk"><i class="fa fa-circle-o"></i> Produk</a></li>
+            <li><a href="<?= base_url(); ?>AdminHome/home_promo"><i class="fa fa-circle-o"></i> Promo</a></li>
             <li><a href="<?= base_url(); ?>AdminHome/home_jasa"><i class="fa fa-circle-o"></i> Jasa</a></li>
           </ul>
         </li>

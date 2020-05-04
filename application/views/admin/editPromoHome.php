@@ -4,7 +4,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      Tambah Produk
+      Edit Promo
       </h1>
     </section>
     <!-- Main content -->
@@ -19,25 +19,12 @@
             <form role="form" method="post" action="#">
               <div class="box-body">
                 <div class="form-group">
-                  <label>Nama Produk</label>
+                  <label>Judul Promo</label>
                   <input type="text" name="kode" class="form-control" placeholder="nama" required>
-                </div>
-                
-                <div class="box-body pad">
-                  <form>
-                    <label>Deskripsi</label>
-                    <textarea class="textarea" placeholder="Deskripsi Produk"
-                              style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                  </form>
-                </div>
-
-                <div class="form-group">
-                  <label>Harga</label>
-                  <input type="text" name="jumlah" class="form-control" placeholder="Harga" required>
                 </div>
 
         				<div class="form-group">
-        					<label>Foto Produk</label>
+        					<label>Foto</label>
         					<input type="file" name="filefoto" class="dropify" data-height="300">
         				</div>
 

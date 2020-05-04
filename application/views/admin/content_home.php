@@ -21,7 +21,7 @@
               <div class="box-body">
                 <div class="form-group">
                   <label>Judul</label>
-                  <input type="text" name="kode" class="form-control" placeholder="Judul" required>
+                  <input type="text" name="judul" class="form-control" placeholder="Judul" required>
                 </div>
 
                 <div class="box-body pad">
@@ -37,58 +37,6 @@
         					<input type="file" name="filefoto" class="dropify" data-height="300">
         				</div>
 
-                <!-- ====promo===== -->
-                <br>
-                <h3>Promo Klinik</h3>
-                <br>
-
-                <div class="form-group">
-                  <label>Promo 1</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 1" required>
-                </div>
-                  <div class="form-group">
-                    <input type="file" name="filefoto" class="dropify" data-height="300">
-                  </div>
-
-                <div class="form-group">
-                  <label>Promo 2</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 2" required>
-                </div>
-                <div class="form-group">
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
-
-                <div class="form-group">
-                  <label>Promo 3</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 3" required>
-                </div>
-                <div class="form-group">
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
-
-                <div class="form-group">
-                  <label>Promo 4</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 4" required>
-                </div>
-                <div class="form-group">
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
-
-                <div class="form-group">
-                  <label>Promo 5</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 5" required>
-                </div>
-                <div class="form-group">
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
-
-                <div class="form-group">
-                  <label>Promo 6</label>
-                  <input type="text" name="nama" class="form-control" placeholder="Promo 6" required>
-                </div>
-                <div class="form-group">
-                  <input type="file" name="filefoto" class="dropify" data-height="300">
-                </div>
 
               <!-- /.box-body -->
               <div class="box-footer">

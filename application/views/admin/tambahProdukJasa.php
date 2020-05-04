@@ -33,7 +33,7 @@
 
                 <div class="form-group">
                   <label>Harga</label>
-                  <input type="text" name="harga_jasa" id="harga_jasa" class="form-control" placeholder="Jumlah Stok" required>
+                  <input type="text" name="harga_jasa" id="harga_jasa" class="form-control" placeholder="Harga" required>
                 </div>
 
         				<div class="form-group">
