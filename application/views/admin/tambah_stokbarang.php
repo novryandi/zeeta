@@ -30,17 +30,18 @@
                   <label>Jumlah stok</label>
                   <input type="text" name="jumlah_produk" class="form-control" placeholder="Jumlah Stok">
                 </div>
-                
                 <div class="form-group">
                   <label>Deskripsi</label>
                   <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Deskripsi">
                 </div>
-                
-                <div class="form-group">
-                  <label>Foto Barang</label>
-                  <input type="file" class="form-control form-control-user" id="foto" placeholder="Foto Barang" name="foto">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Foto Barang</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="file" class="form-control form-control-user" id="foto" placeholder="Foto Barang" name="foto">
+                  </div>
                 </div>
-
 
               </div>
               <!-- /.box-body -->

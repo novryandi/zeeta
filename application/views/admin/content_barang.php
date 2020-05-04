@@ -31,7 +31,6 @@
                   <th>Harga barang</th>
                   <th>Jumlah Stok</th>
                   <th>Deskripsi</th>
-                  <th>Foto barang</th>
                   <th>Aksi</th>
                 </tr>
                 </thead>
@@ -42,7 +41,6 @@
                   <td><?= $prd['harga_produk']?></td>
                   <td><?= $prd['jumlah_produk']?></td>
                   <td><?= $prd['deskripsi']?></td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
                     <a href="<?= base_url();?>Barang/Edit/<?= $prd['id_produk'];?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                   	<a href="<?= base_url();?>Barang/Hapus/<?= $prd['id_produk'];?>" role="button" class="btn btn-danger" onclick="return confirm('yakin?');">Hapus</a>
