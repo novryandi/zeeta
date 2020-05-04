@@ -35,7 +35,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                   	<button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                   <tr>
@@ -43,7 +43,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                     <button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                   <tr>
@@ -51,7 +51,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                     <button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                   <tr>
@@ -59,7 +59,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                     <button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                   <tr>
@@ -67,7 +67,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                     <button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                   <tr>
@@ -75,7 +75,7 @@
                   <td>nama</td>
                   <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('ProdukHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
+                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                     <button type="button" class="btn btn-danger">Hapus</button>
                   </td>
                 </tr>
