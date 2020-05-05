@@ -7,6 +7,7 @@ class AdminHome extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Keamanan');
 		$this->load->model('Jasa');
+		$this->load->model('Promo');
 	}
 
 	public function index()
@@ -19,9 +20,11 @@ class AdminHome extends CI_Controller {
 
 	public function home_promo()
 	{
+		$this->Keamanan->getKeamananAdm();
+		$data['promo'] = $this->Promo->getAllPromo();
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
-		$this->load->view('admin/promoHome');
+		$this->load->view('admin/promoHome',$data);
 		$this->load->view('admin/footer');
 	}
 
