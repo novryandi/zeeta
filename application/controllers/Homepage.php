@@ -6,18 +6,21 @@ class Homepage extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('Produk');
-		$this->load->model('Rproduk');
+		$this->load->model('Home');
 		$this->load->model('Jasa');
-		$this->load->model('RJasa');
+		$this->load->model('Promo');
 	}
 
 	//Halaman Utama Website	- Homepage
 	public function index()
 	{
+		$id = 1;
+		$data['home'] = $this->Home->getHomeById($id);
+		$data['promo'] = $this->Promo->getAllPromo();
 		$isi['title'] = 'Klinik | Home';
 
 		$this->load->view('template/v_header', $isi);
-		$this->load->view('home/home');
+		$this->load->view('home/home',$data);
 		$this->load->view('template/v_footer');
 	}
 
@@ -54,19 +57,21 @@ class Homepage extends CI_Controller {
 
 	public function jasa()
 	{
+		$data['jasa'] = $this->Jasa->getAllJasa();
 		$isi['title'] = 'Klinik | jasa';
 
 		$this->load->view('template/v_header', $isi);
-		$this->load->view('home/jasa');
+		$this->load->view('home/jasa',$data);
 		$this->load->view('template/v_footer');
 	}
 
 	public function produk()
 	{
+		$data['produk'] = $this->Produk->getAllProduk();
 		$isi['title'] = 'Klinik | Produk';
 
 		$this->load->view('template/v_header', $isi);
-		$this->load->view('home/produk');
+		$this->load->view('home/produk',$data);
 		$this->load->view('template/v_footer');
 	}
 
