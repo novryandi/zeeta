@@ -29,12 +29,12 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                  
+
                   <div class="col-lg-6 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>0</h3>
+                        <h3><?= $ReservasiS;?></h3>
 
                       <p>Reservasi yang sudah selesai</p>
                       </div>
@@ -49,7 +49,7 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>0</h3>
+                        <h3><?= $ReservasiB;?></h3>
 
                       <p>Reservasi yang belum selesai</p>
                       </div>
@@ -81,12 +81,12 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                  
+
                   <div class="col-lg-6 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                       <div class="inner">
-                        <h3>0</h3>
+                        <h3><?= $StokS;?></h3>
 
                       <p>Stok barang keseluruhan</p>
                       </div>
@@ -101,7 +101,7 @@
                     <!-- small box -->
                     <div class="small-box bg-red">
                       <div class="inner">
-                        <h3>0</h3>
+                        <h3><?= $StokK;?></h3>
 
                       <p>Stok barang yang kosong</p>
                       </div>
