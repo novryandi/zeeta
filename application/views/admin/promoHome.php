@@ -30,55 +30,16 @@
                 </tr>
                 </thead>
                 <tbody>
+                  <?php foreach($promo as $pr) : ?>
                 <tr>
-                  <td>1</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
+                  <td><?= $pr['id_promo'];?></td>
+                  <td><?= $pr['nama_promo'];?></td>
+                  <td><img src="<?= base_url();?>upload/promo/<?= $pr['foto_promo'];?>" width="auto" height="150px"></td>
                   <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                  	<button type="button" class="btn btn-danger">Hapus</button>
+                    <a href="<?= base_url();?>PromoHome/index/<?= $pr['id_promo'];?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
                   </td>
                   <tr>
-                  <td>2</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
-                  <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                  </td>
-                  <tr>
-                  <td>3</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
-                  <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                  </td>
-                  <tr>
-                  <td>4</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
-                  <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                  </td>
-                  <tr>
-                  <td>5</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
-                  <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                  </td>
-                  <tr>
-                  <td>6</td>
-                  <td>nama</td>
-                  <td><img src="../assets/template/images/produk/paket bumil.jpg" width="auto" height="150px"></td>
-                  <td>
-                    <a href="<?= base_url('PromoHome');?>" class="btn btn-primary" role="button" title="Tambah Data"> Edit</a>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                  </td>
-                </tr>
+                  <?php endforeach; ?>
                 </tbody>
               </table>
             </div>
