@@ -8,14 +8,25 @@ class AdminHome extends CI_Controller {
 		$this->load->model('Keamanan');
 		$this->load->model('Jasa');
 		$this->load->model('Promo');
+		$this->load->model('Home');
 	}
 
 	public function index()
 	{
+		$this->Keamanan->getKeamananAdm();
+		$id_home = 1;
+		$this->form_validation->set_rules('nama_home','Jumlah','required');
+		$this->form_validation->set_rules('deskripsi_home','Deskripsi','required');
+		if($this->form_validation->run() == FALSE ){
+		$data['home'] = $this->Home->getHomeById($id_home);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
-		$this->load->view('admin/content_home');
+		$this->load->view('admin/content_home',$data);
 		$this->load->view('admin/footer');
+	} else {
+		$this->Home->ubahDataHome($id_home);
+		redirect('admin');
+	}
 	}
 
 	public function home_promo()
