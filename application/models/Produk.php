@@ -20,6 +20,12 @@ class Produk extends CI_model {
     return $this->db->count_all('produk');
   }
 
+  public function jumlahStokKosong(){
+    $this->db->like('jumlah_produk', '0');
+    $this->db->from('produk');
+    return $this->db->count_all_results();
+  }
+
   private function id(){
     $this->load->helper('date');
     date_default_timezone_set('Asia/Jakarta');
