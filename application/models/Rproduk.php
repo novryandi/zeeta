@@ -11,6 +11,20 @@ class Rproduk extends CI_model {
     return $this->db->get_where('reservasi_produk',['id_reservasi' => $id_reservasi])->row_array();
   }
 
+  public function jumlahRproduk1(){
+    $this->db->like('status', '1');
+    $this->db->or_like('status', '2');
+    $this->db->or_like('status', '3');
+    $this->db->from('reservasi_produk');
+    return $this->db->count_all_results();
+  }
+
+  public function jumlahRproduk2(){
+    $this->db->like('status', '4');
+    $this->db->from('reservasi_produk');
+    return $this->db->count_all_results();
+  }
+
   private function id(){
     $this->load->helper('date');
     date_default_timezone_set('Asia/Jakarta');
