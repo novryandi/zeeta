@@ -1,4 +1,3 @@
-
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -16,18 +15,16 @@
           <div class="box box-primary">
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" method="post" action="#">
+            <form role="form" method="post" enctype="multipart/form-data" action="<?= base_url();?>PromoHome/index/<?= $promo['id_promo'];?>">
               <div class="box-body">
                 <div class="form-group">
                   <label>Judul Promo</label>
-                  <input type="text" name="kode" class="form-control" placeholder="nama" required>
+                  <input type="text" name="nama_promo" id="nama_promo" class="form-control" value="<?= $promo['nama_promo'];?>" required>
                 </div>
-
         				<div class="form-group">
         					<label>Foto</label>
-        					<input type="file" name="filefoto" class="dropify" data-height="300">
+        					<input type="file" name="foto_promo" class="dropify" data-height="300">
         				</div>
-
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary" title="Simpan Data"> <i class="glyphicon glyphicon-floppy-disk"></i> Simpan</button>
