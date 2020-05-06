@@ -15,14 +15,14 @@
 								<img src="<?= base_url(); ?>upload/produk/<?= $pr['foto'];?>" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
-									<a href="<?= base_url();?>produk/index/<?=$pr['id_produk'];?>">
+									<a href="<?= base_url();?>Homepage/produkdesk/<?=$pr['id_produk'];?>">
 										<img src="<?= base_url(); ?>upload/produk/<?= $pr['foto'];?>" alt="IMG-PRODUCT">
 									</a>
 								</div>
 							</div>
 
 							<div class="block2-txt p-t-20">
-								<a href="<?= base_url();?>produk/index/<?=$pr['id_produk'];?>" class="block2-name dis-block s-text3 p-b-5">
+								<a href="<?= base_url();?>Homepage/produkdesk/<?=$pr['id_produk'];?>" class="block2-name dis-block s-text3 p-b-5">
 									<?= $pr['nama_produk'];?>
 								</a>
 
