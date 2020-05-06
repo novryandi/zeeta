@@ -77,7 +77,7 @@
 							</li>
 							
 							<li>
-								<a href="<?= base_url('homepage/katalog');?>" style="color: gold;">Produk</a>
+								<a id="unclickable" href="#" style="color: gold;">Produk</a>
 								<ul class="sub_menu">
 									<li><a href="<?= base_url('homepage/produk')?>" style="color: gold;">Produk</a></li>
 									<li><a href="<?= base_url('homepage/jasa')?>" style="color: gold;">Jasa</a></li>

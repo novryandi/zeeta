@@ -8,30 +8,30 @@
 		<div class="container">
 
 			<div class="row">
-				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-					<!-- block1 -->
-					<?php foreach($jasa as $js) :?>
-					<div class="block2">
-							<div class="block2-img hov-img-zoom wrap-pic-w of-hidden pos-relative">
-								<img src="<?= base_url(); ?>upload/jasa/<?= $js['foto_jasa'];?>" alt="IMG-PRODUCT">
-
-								<div class="block2-overlay trans-0-4">
+				<?php foreach($jasa as $js) :?>
+					<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">		
+						<div class="block2">
+								<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
 									<a href="<?= base_url();?>Homepage/jasadesk/<?= $js['id_jasa'];?>">
-										<img src="<?= base_url(); ?>upload/jasa/<?= $js['foto_jasa'];?>" alt="IMG-PRODUCT">
+										<img width="auto" height="350px" src="<?= base_url(); ?>upload/jasa/<?= $js['foto_jasa'];?>" alt="IMG-PRODUCT">
 									</a>
+									
 								</div>
-							</div>
 
-							<div class="block2-txt p-t-20">
-								<a href="<?= base_url();?>Homepage/jasadesk/<?= $js['id_jasa'];?>" class="block2-name dis-block s-text3 p-b-5">
-									<?= $js['nama_jasa'];?>
-								</a>
+								<div class="block2-txt p-t-20">
+									<a href="<?= base_url();?>Homepage/jasadesk/<?= $js['id_jasa'];?>" class="block2-name dis-block s-text3 p-b-5">
+										<?= $js['nama_jasa'];?>
+									</a>
 
-								<span class="block2-price m-text6 p-r-5">
-									Rp.<?= $js['harga_jasa'];?>
-								</span>
-							</div>
+									<span class="block2-price m-text6 p-r-5">
+										Rp.<?= $js['harga_jasa'];?>
+									</span>
+								</div>
 						</div>
-						<br>
-					<?php endforeach;?>
+					</div>
+					<br>
+				<?php endforeach;?>
+			</div>
+		</div>
+					
 	</section>

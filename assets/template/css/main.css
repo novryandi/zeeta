@@ -2433,3 +2433,7 @@ color: white;
 .links a{
 margin-left: 4px;
 }
+
+#unclickable >a:hover{
+  cursor: default;
+}
