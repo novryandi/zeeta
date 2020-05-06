@@ -21,6 +21,8 @@ class Profil extends CI_Controller {
 
 		if($this->form_validation->run() == FALSE){
 		$isi['title'] = 'Klinik';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/tambah_pengguna');
 		$this->load->view('admin/footer');
@@ -42,6 +44,8 @@ class Profil extends CI_Controller {
 
 		if($this->form_validation->run() == FALSE){
 		$isi['title'] = 'Klinik';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/edit_pengguna',$data);
 		$this->load->view('admin/footer');
