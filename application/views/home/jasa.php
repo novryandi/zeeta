@@ -16,14 +16,14 @@
 								<img src="<?= base_url(); ?>upload/jasa/<?= $js['foto_jasa'];?>" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
-									<a href="<?= base_url();?>produk/produk2/<?= $js['id_jasa'];?>">
+									<a href="<?= base_url();?>Homepage/jasadesk/<?= $js['id_jasa'];?>">
 										<img src="<?= base_url(); ?>upload/jasa/<?= $js['foto_jasa'];?>" alt="IMG-PRODUCT">
 									</a>
 								</div>
 							</div>
 
 							<div class="block2-txt p-t-20">
-								<a href="<?= base_url();?>produk/produk2/<?= $js['id_jasa'];?>" class="block2-name dis-block s-text3 p-b-5">
+								<a href="<?= base_url();?>Homepage/jasadesk/<?= $js['id_jasa'];?>" class="block2-name dis-block s-text3 p-b-5">
 									<?= $js['nama_jasa'];?>
 								</a>
 
