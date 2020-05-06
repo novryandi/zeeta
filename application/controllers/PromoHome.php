@@ -7,6 +7,7 @@ class PromoHome extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Keamanan');
 		$this->load->model('Promo');
+		$this->load->model('Madmin');
 	}
 
 	public function index($id_promo)
@@ -17,6 +18,8 @@ class PromoHome extends CI_Controller {
 		if($this->form_validation->run() == FALSE ){
 		$data['promo'] = $this->Promo->getPromoById($id_promo);
 		$isi['title'] = 'Klinik';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/editPromoHome',$data);
 		$this->load->view('admin/footer');
