@@ -7,11 +7,14 @@ class Barang extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Keamanan');
 		$this->load->model('Produk');
+		$this->load->model('Madmin');
 	}
 
 	public function index()
 	{
 		$this->Keamanan->getKeamananAdm();
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$data['produk'] = $this->Produk->getAllProduk();
 		$isi['title'] = 'Barang | Zeeta';
 		$this->load->view('admin/header', $isi);
@@ -27,6 +30,8 @@ class Barang extends CI_Controller {
 		$this->form_validation->set_rules('jumlah_produk','Jumlah','required|numeric');
 		$this->form_validation->set_rules('deskripsi','Deskripsi','required');
 		if($this->form_validation->run() == FALSE ){
+			$username = $this->session->userdata('username');
+			$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Barang | Zeeta';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/tambah_stokbarang');
@@ -48,6 +53,8 @@ class Barang extends CI_Controller {
 		$data['produk'] = $this->Produk->getProdukById($id_produk);
 		if($this->form_validation->run() ==  FALSE){
 		$isi['title'] = 'Barang | Zeeta';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/edit_stokbarang',$data);
 		$this->load->view('admin/footer');
