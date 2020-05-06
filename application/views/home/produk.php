@@ -12,14 +12,14 @@
 						<!-- block1 -->
 						
 							<div class="block1">
-								<div class="fit-image block1 hov-img-zoom-prm pos-relative m-b-30">
+								<div class="fit-image block1 hov-img-zoom-prm pos-relative">
 									<a href="<?= base_url();?>Homepage/produkdesk/<?=$pr['id_produk'];?>">
 										<img width="auto" height="300px" src="<?= base_url(); ?>upload/produk/<?= $pr['foto'];?>" alt="IMG-PRODUCT">
 									</a>
 									
 								</div>
 
-								<div class="block2-txt p-t-20">
+								<div class="block2-txt p-t-10 p-b-20">
 									<a href="<?= base_url();?>Homepage/produkdesk/<?=$pr['id_produk'];?>" class="block2-name dis-block s-text3 p-b-5">
 										<?= $pr['nama_produk'];?>
 									</a>
