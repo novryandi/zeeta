@@ -7,6 +7,7 @@ class JasaHome extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Keamanan');
 		$this->load->model('Jasa');
+		$this->load->model('Madmin');
 	}
 
 	public function index()
@@ -17,6 +18,8 @@ class JasaHome extends CI_Controller {
 	$this->form_validation->set_rules('harga_jasa','Harga','required|numeric');
 	if($this->form_validation->run() == FALSE ){
 		$isi['title'] = 'Klinik';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/tambahProdukJasa');
 		$this->load->view('admin/footer');
@@ -35,6 +38,8 @@ class JasaHome extends CI_Controller {
 		if($this->form_validation->run() == FALSE ){
 		$data['jasa'] = $this->Jasa->getJasaById($id_jasa);
 		$isi['title'] = 'Klinik';
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/editJasaHome',$data);
 		$this->load->view('admin/footer');
