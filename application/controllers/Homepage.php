@@ -6,6 +6,7 @@ class Homepage extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('Produk');
+		$this->load->model('Rproduk');
 		$this->load->model('Home');
 		$this->load->model('Jasa');
 		$this->load->model('Promo');
