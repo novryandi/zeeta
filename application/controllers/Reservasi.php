@@ -7,12 +7,15 @@ class Reservasi extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Keamanan');
 		$this->load->model('Rproduk');
+		$this->load->model('Madmin');
 	}
 
 	public function index()
 	{
 		$this->Keamanan->getKeamananAdm();
 		$data['produk'] = $this->Rproduk->getAllRproduk();
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Barang | Zeeta';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/content_reservasi',$data);
