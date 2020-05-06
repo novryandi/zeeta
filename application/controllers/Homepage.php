@@ -66,6 +66,18 @@ class Homepage extends CI_Controller {
 		$this->load->view('template/v_footer');
 	}
 
+	public function jasadesk($id_jasa)
+	{
+		$data['jasa'] = $this->Jasa->getJasaById($id_jasa);
+		$isi =array( 'title'	=>	'Zeta Salon',
+						'isi'	=>	'home/list');
+
+		$this->load->view('template/v_header',$isi);
+		$this->load->view('produk/produk2', $data);
+		$this->load->view('template/v_footer');
+
+	}
+
 	public function produk()
 	{
 		$data['produk'] = $this->Produk->getAllProduk();
@@ -74,6 +86,18 @@ class Homepage extends CI_Controller {
 		$this->load->view('template/v_header', $isi);
 		$this->load->view('home/produk',$data);
 		$this->load->view('template/v_footer');
+	}
+
+	public function produkdesk($id_produk)
+	{
+		$data['produk'] = $this->Produk->getProdukById($id_produk);
+		$isi =array( 'title'	=>	'Zeta Salon',
+						'isi'	=>	'home/list');
+
+		$this->load->view('template/v_header',$isi);
+		$this->load->view('produk/produk1', $data);
+		$this->load->view('template/v_footer');
+
 	}
 
 	public function login()
