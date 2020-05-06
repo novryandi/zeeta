@@ -38,6 +38,7 @@ class Admin extends CI_Controller {
 		$this->Keamanan->getKeamananAdm();
 		$username = $this->session->userdata('username');
 		$data['admin'] = $this->Madmin->getAdminByUsername($username);
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/profileadmin',$data);
