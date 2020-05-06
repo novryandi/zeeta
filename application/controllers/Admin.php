@@ -25,6 +25,8 @@ class Admin extends CI_Controller {
 		}
 		$data['StokS'] = $jumlah;
 		$data['StokK'] = $this->Produk->jumlahStokKosong();
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/content',$data);
