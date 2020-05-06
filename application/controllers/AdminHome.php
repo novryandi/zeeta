@@ -9,6 +9,7 @@ class AdminHome extends CI_Controller {
 		$this->load->model('Jasa');
 		$this->load->model('Promo');
 		$this->load->model('Home');
+		$this->load->model('Madmin');
 	}
 
 	public function index()
@@ -18,6 +19,8 @@ class AdminHome extends CI_Controller {
 		$this->form_validation->set_rules('nama_home','Jumlah','required');
 		$this->form_validation->set_rules('deskripsi_home','Deskripsi','required');
 		if($this->form_validation->run() == FALSE ){
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$data['home'] = $this->Home->getHomeById($id_home);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
@@ -33,6 +36,8 @@ class AdminHome extends CI_Controller {
 	{
 		$this->Keamanan->getKeamananAdm();
 		$data['promo'] = $this->Promo->getAllPromo();
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/promoHome',$data);
@@ -43,6 +48,8 @@ class AdminHome extends CI_Controller {
 	{
 		$this->Keamanan->getKeamananAdm();
 		$data['jasa'] = $this->Jasa->getAllJasa();
+		$username = $this->session->userdata('username');
+		$isi['admin'] = $this->Madmin->getAdminByUsername($username);
 		$isi['title'] = 'Klinik';
 		$this->load->view('admin/header', $isi);
 		$this->load->view('admin/jasaHome',$data);
